@@ -47,8 +47,8 @@ def download_playlist(playlist_url, output_dir='downloads', browser=None, cookie
         print(f"An error occurred: {str(e)}")
 
 def main():
-    parser = argparse.ArgumentParser(description='Download YouTube playlist in high quality')
-    parser.add_argument('playlist_url', help='URL of the YouTube playlist')
+    parser = argparse.ArgumentParser(description='Download playlist in high quality')
+    parser.add_argument('playlist_url', help='URL of the playlist')
     parser.add_argument('--output-dir', '-o', default='downloads',
                       help='Directory to save the downloaded videos (default: downloads)')
     parser.add_argument('--browser', '-b',

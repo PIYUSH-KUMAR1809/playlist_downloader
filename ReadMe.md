@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > **Disclaimer**: This tool is developed for **educational purposes only**. The developer does not condone the use of this tool for downloading copyrighted content without permission. Users are responsible for complying with YouTube's Terms of Service and applicable copyright laws. Please use this tool only for content you own or have permission to download (e.g., your own videos, public domain content, or Creative Commons).
 
-A simple, free tool to download YouTube videos without any ads, interruptions, or hindrances.
+A simple, free tool to download videos without any ads, interruptions, or hindrances.
 
 ## 🚀 Features
 
