@@ -9,11 +9,10 @@ A simple, free tool to download videos without any ads, interruptions, or hindra
 
 - **Ad-free Experience**: Download videos directly without navigating through ad-heavy websites.
 - **High Quality**: Downloads the best available quality (MP4 video + M4A audio).
-- **Playlist Support**: Currently supports downloading entire playlists.
+- **Playlist & Single Video Support**: Automatically detects and downloads entire playlists or individual videos.
 
 ## 🔮 Future Plans
 
-- **Single Video Download**: Option to download individual videos.
 - **Web Interface**: A dedicated website for easier access.
 - **GUI Application**: A smooth user interface to replace the command line.
 
@@ -32,10 +31,32 @@ A simple, free tool to download videos without any ads, interruptions, or hindra
 
 ## 💻 Usage
 
-To download a playlist, run the following command in your terminal:
+To download a video or playlist, simply provide the URL:
 
 ```bash
-python download_playlist.py "PLAYLIST_URL"
+python download_playlist.py "YOUR_URL_HERE"
 ```
 
-**Note:** Make sure to wrap the URL in quotes to avoid issues with special characters.
+**Note:** Always wrap the URL in quotes (`""`) to ensure special characters like `&` are processed correctly.
+
+### Download Single Video from Playlist
+If you have a playlist URL but only want to download the specific video being played, use the `--single-video` flag:
+
+```bash
+python download_playlist.py "YOUR_PLAYLIST_URL_HERE" --single-video
+```
+
+### Download Audio Only (mp3, m4a, wav)
+You can specify the format using the `--format` (or `-f`) flag.
+Supported formats: `mp4` (default), `mp3`, `m4a`, `wav`.
+
+Example (Download as MP3):
+```bash
+python download_playlist.py "YOUR_URL_HERE" --format mp3 --single-video
+```
+
+### Options
+- `-o`, `--output-dir`: Specify download directory (default: `downloads`)
+- `-s`, `--single-video`: Force download as a single video, ignoring playlist context
+- `-f`, `--format`: Specify format (mp4, mp3, m4a, wav)
+- `-b`, `--browser`: Load cookies from browser (useful for age-gated content)
